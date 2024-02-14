@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background:#0c192c;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    
+}
+.bubbles{
+    position: relative;
+    display: flex;
+}
+.bubbles span{
+position: relative;
+width: 30px;
+height: 30px;
+background: aqua ;
+margin: 0 4px;
+border-radius: 50%;
+box-shadow: 0 0 0 10px #4fc3dc44,
+0 0  50px aqua,
+0 0  100px aquamarine;
+animation: animate 15s linear infinite;
+animation-duration: calc(130s / var(--i)); 
+} 
+.bubbles span:nth-child(even)
+{
+    background:rgb(218, 79, 79) ;
+    box-shadow: 0 0 0 10px rgb(218, 79, 79),
+    0 0  50px rgb(255, 0, 217),
+    0 0  100px rgb(232, 84, 165);  
+}
+@keyframes animate{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+
+
+
+h1{
+   background: linear-gradient(90deg,aqua,red,blue);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+margin-bottom: 20px;
+text-align: center;
+}
+.form{
+  
+    background-color: rgb(3, 8, 27);
+    height: 250px;
+    width: 400px;
+    text-align: center;
+    border-radius: 15px;
+    color: whitesmoke;
+    margin-top: 200px;
+    overflow: hidden;
+}
+.form:hover{
+    box-shadow: 0 0  20px whitesmoke,
+    0 0 40px brown;
+}
+button{
+    background: aquamarine;
+    padding: 10px;
+    color: rgb(3, 8,27);
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 0 0 20px white,
+    0 0 30px aqua;
+    margin-bottom:20px;
+}
+a:hover{
+    color: aqua;
+    margin-top: 10px;
+}
+input{
+    border-radius: 6px;
+    margin-top:5px;
+    margin-bottom: 10px;
+    height: 25px;
+    border-color: rgb(3, 8, 27);
+    box-shadow: 0 0  5px wheat;
+}
+a{
+    text-decoration: none;
+    padding-top: 10px;
+}
+.forms{
+  
+    background-color: rgb(3, 8, 27);
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    border-radius: 15px;
+    color: whitesmoke;
+    margin-top: 100px;
+    overflow: hidden;
+}
+.forms:hover{
+    box-shadow: 0 0  20px whitesmoke,
+    0 0 40px brown;
+}
